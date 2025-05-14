@@ -43,7 +43,7 @@ m3log.fatal("致命错误");
 import { M3Log } from 'm3log';
 
 // 创建自定义记录器并设置默认标签
-const logger = new M3Log(["api", "server"]);
+const logger = new M3Log(["api", "server"],autoConsole: true);
 
 // 输出日志
 logger.info("服务器启动成功");
