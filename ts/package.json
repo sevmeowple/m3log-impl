@@ -1,15 +1,21 @@
 {
   "name": "m3log",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
     "@types/bun": "latest"
   },
   "scripts": {
-    "publish": "npm publish"
+    "patch": "npm version path && npm publish",
+    "minor": "npm version minor && npm publish",
+    "major": "npm version major && npm publish"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sevmeowple/m3log-impl.git"
   }
 }
